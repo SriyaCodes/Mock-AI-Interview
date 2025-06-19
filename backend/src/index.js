@@ -18,7 +18,11 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-    origin: "http://localhost:3000",
+    origin: [ 
+  "http://localhost:3000",
+  "https://your-frontend.vercel.app" // ← update with your actual deployed frontend URL
+],
+
     credentials: true
 }));
 
@@ -29,6 +33,7 @@ app.use('/aiinterview/user', userRoutes);
 app.use('/aiinterview/admin', adminRoutes);
 app.use('/aiinterview/contact',contactRoutes)
 
-app.listen(5000, () => {
-    console.log("Server is running on port 5000");
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
 });
