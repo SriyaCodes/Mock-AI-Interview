@@ -1,80 +1,62 @@
+# 🎤 Mock AI Interview Platform
 
+A web-based platform that simulates real-time interviews using AI. It generates intelligent questions, records user responses via audio/video, evaluates them instantly, and provides detailed feedback — just like a real interviewer, but smarter and always available!
 
-  <h1>Mock AI Interview Platform</h1>
+🌐 **Live Demo**: [https://intelliview-frontend.onrender.com/](https://intelliview-frontend.onrender.com/)
 
-  <p>This web-based application simulates real interview environments using AI technologies. It offers real-time evaluation of audio/video responses, personalized feedback, and secure user management.</p>
-  
-  <h2>Features</h2>
-  <ul>
-    <li>
-      <strong> AI-Powered Interview Simulation:</strong>
-      Conduct mock interviews with dynamically generated questions and real-time audio/video recording.
-    </li>
-    <li>
-      <strong>Intelligent Question Generation: </strong>
-      Uses Groq LLM API to generate questions based on difficulty and topic.
-    </li>
-    <li>
-      <strong>Audio & Video Response Capture: </strong>
-      Captures user responses through webcam and microphone using WebRTC and MediaRecorder APIs.
-    </li>
-    <li>
-      <strong>Speech-to-Text Conversion:  </strong>
-      Utilizes Whisper model to transcribe audio responses for AI processing.
-    </li>
-    <li>
-      <strong>💬 AI-Based Evaluation:</strong>
-      Analyzes user answers for:
-      <ul>
-        <li>Grammar & Clarity (via Groq LLM)</li>
-        <li>Correctness of answers (via Groq LLM)</li>
-        <li>Confidence level (tone and speech features)</li>
-        <li>Emotion detection (using Google MediaPipe)</li>
-      </ul>
-    </li>
-    <li>
-      <strong>📊 Instant Feedback & Scoring:</strong>
-      Users receive:
-      <ul>
-        <li>Overall performance score</li>
-        <li>Detailed analysis of strengths and weaknesses</li>
-        <li>Suggestions for improvement</li>
-      </ul>
-    </li>
-    <li>
-      <strong>🛡️ Secure Authentication:</strong>
-      Login/signup functionality with JWT-based user sessions.
-    </li>
-    <li>
-      <strong>🧾 Interview History Tracking:</strong>
-      Stores and displays past interviews with questions, responses, and scores.
-    </li>
-  </ul>
-</section>
+---
 
-  <h2>User Interaction Flow</h2>
-  <ul>
-    <li><strong>Sign Up:</strong>  New users create an account.</li>
-    <li><strong>Login:</strong> Registered users log in with credentials.</li>
-    <li><strong>New Interview:</strong> Users start an interview session.</li>
-    <li><strong>Question Generation:</strong> Questions are dynamically generated using Groq API.</li>
-    <li><strong>Response Collection:</strong> Users respond via audio and video.</li>
-    <li><strong>Audio & Video Capture:</strong> Implemented using WebRTC and MediaRecorder APIs.</li>
-    <li><strong>AI Analysis:</strong> Responses are analyzed on multiple criteria.</li>
-    <li><strong>Feedback:</strong> Users receive scores and suggestions for improvement.</li>
-  </ul>
+## 🚀 Features
 
+- 🤖 **AI-Driven Interview Simulation**  
+  Dynamic questions based on topic & difficulty using Groq LLM.
 
-  <h2>Technology Stack</h2>
-  <ul>
-    <li><strong>Frontend:</strong> React.js</li>
-    <li><strong>Backend:</strong> Node.js, Express.js</li>
-    <li><strong>Database:</strong> MongoDB</li>
-    <li><strong>Speech-to-Text:</strong> Whisper</li>
-    <li><strong>Text Analysis:</strong> Groq API (LLM-based)</li>
-    <li><strong>Facial Analysis:</strong> Google MediaPipe</li>
-    <li><strong>Authentication:</strong> JWT (JSON Web Tokens)</li>
-  </ul>
+- 🎥 **Audio & Video Capture**  
+  Record responses with your webcam & mic via WebRTC + MediaRecorder.
 
-</body>
-</html>
+- 🗣️ **Speech Transcription**  
+  Converts spoken answers to text using OpenAI's Whisper.
+
+- 📊 **Real-Time Evaluation**  
+  Feedback on:
+  - Grammar & clarity  
+  - Answer accuracy  
+  - Confidence & tone  
+  - Emotions (via Google MediaPipe)
+
+- 📈 **Instant Scoring & Feedback**  
+  Get your performance score, improvement tips, and past history.
+
+- 🔐 **Secure Auth**  
+  JWT-based login & protected sessions.
+
+---
+
+## 🧭 How It Works
+
+1. **Sign Up / Login**  
+2. **Start Interview** – Questions are generated on the fly  
+3. **Respond** – Record audio/video answers  
+4. **Get Evaluated** – Real-time AI feedback  
+5. **Track History** – View past sessions anytime
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React.js  
+- **Backend:** Node.js + Express  
+- **Database:** MongoDB  
+- **Speech-to-Text:** Whisper  
+- **NLP:** Groq LLM API  
+- **Facial Analysis:** Google MediaPipe  
+- **Auth:** JWT
+
+## 📮 Feedback / Contributions
+
+Found a bug? Got an idea? PRs are welcome!  
+Let's build the future of mock interviews together. 🤝
+
+---
+
+© 2025 IntelliView.
